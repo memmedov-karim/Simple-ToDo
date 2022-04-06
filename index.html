@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Rubik Wet Paint', cursive;
+           
+        }
+        .container{
+            width:80%;
+            margin: auto;
+            /* background-color: aqua; */
+            height: 5000px;
+        }
+        .main{
+            width:60%;
+            margin: auto;
+        }
+        .search{
+            width:100%;
+            background-color: dodgerblue;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .add{
+            width:100%;
+            background-color: teal;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        ul{
+
+        }
+
+        li{
+            background-color: rgb(201, 176, 176);
+            list-style: none;
+            padding: 10px;
+            border-radius: 20px;
+            margin:20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .delete{
+            background-color: rgb(213, 113, 113);
+            display: inline-block;
+            padding: 5px;
+            border-radius: 100%;
+            text-align: center;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+     
+        <div class="main">   <h1>TO DO</h1>
+            <div class="search">
+                 <input type="text"name="search"id='search'placeholder="search...">
+            </div>
+    
+            <div class="center">
+
+                <ul >
+                    <li>Todo <span class="delete">x</span> </li>
+                </ul>
+    
+            </div>
+    
+            <div class="add">
+                <input type="text"name="add"id='add'placeholder="add todo">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
